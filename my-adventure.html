@@ -9,7 +9,7 @@ margin:0%;
 background-image:url(genericfood.jpg);
 background-repeat: no-repeat;
 background-size: 100%;
-background-color: black;
+background-color: #141518;
 }
 
 ul.topnav {
@@ -28,13 +28,16 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 16px; 
+    font-family: 'Times New Roman', Times, serif;
+    padding-left:30px;
 }
 
 ul.topnav li a:hover:not(.active) {background-color:transparent} 
 
-ul.topnav li a.active {background-color: #4CAF50;}
+ul.topnav li a.active {background-color: peachpuff;}
 
-ul.topnav li.right {float: right;}
+
 
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
@@ -44,7 +47,7 @@ ul.topnav li.right {float: right;}
 .container {
     padding-top: 30rem; 
     margin-left: 35rem;
-    background-image: url(wood.jpg);
+    background-image: url(brownwood.jpg);
     background-repeat: no-repeat;
     margin-top:27rem;
     margin-right: 25rem;
@@ -52,7 +55,45 @@ ul.topnav li.right {float: right;}
 
 }
 
+.textcontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 44rem;
+    font-size: 30px; 
+    color: antiquewhite; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px; 
+      }
+      
+      .column {
+        flex: 50%;
+        padding: 0 4px;
+        margin-left: 200px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      h2 {
+          font-size: 25px;
+          font-family:'Times New Roman', Times, serif;
+          color: antiquewhite;
+      }
 </style>
 </head>
 <body>
@@ -61,7 +102,7 @@ ul.topnav li.right {float: right;}
   <li><a href="https://en.wikipedia.org/wiki/Dua_Lipa">About Us</a></li>
   <li><a href="#news">Chefs</a></li>
   <li><a href="#contact">Menu</a></li>
-  <li class="right"><a href="#about">Contact Us</a></li>
+  <li><a href="#about">Contact Us</a></li>
   <li><a href="dining">Private Dining</a></li>
   <li><a href="reservations">Reservations</a></li>
   <li><a href="Employment">Employment</a></li>
@@ -73,5 +114,20 @@ ul.topnav li.right {float: right;}
 </div>
 <div class="container"> 
 </div>
+<div class="textcontainer"/>
+        <div class="centered">Expressing nothing but geniune love</div>
+        <h2>We take pride in the way we love, and we hope it inspires you to do the same.</h2>
+    </div>
+<div class="row"> 
+<div class="column"> 
+    <img src="cake.jpg" alt="cake"/>
+    <img src="waffle.jpg" alt="waffle"/> 
+    <img src="strawberry.jpg" alt="strawberry"/>
+</div>
+</div>
+</p>
+</div>
 </body> 
+<footer> 
+</footer>
 </html>
