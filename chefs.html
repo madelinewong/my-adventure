@@ -1,44 +1,161 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chefs</title>
+<style>
+body { 
+margin:0%;
+background-image:url(genericfood.jpg);
+background-repeat: no-repeat;
+background-size: 100%;
+background-color: #141518;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin-left:100px;
+    padding: 0;
+    overflow: hidden;
+    background-color:transparent;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px; 
+    font-family: 'Times New Roman', Times, serif;
+    padding-left:30px;
+}
+
+ul.topnav li a:hover:not(.active) {background-color:transparent} 
+
+ul.topnav li a.active {background-color: peachpuff;}
+
+
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+
+.container {
+    padding-top: 30rem; 
+    margin-left: 35rem;
+    background-image: url(brownwood.jpg);
+    background-repeat: no-repeat;
+    margin-top:27rem;
+    margin-right: 25rem;
+    margin-left: 25rem;
+
+}
+
+.textcontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.text.container {
+    position: relative; 
+    text-align: center; 
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 60rem;
+    padding-right: 18rem;
+    font-size: 30px; 
+    color: antiquewhite; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px; 
+      }
+      
+      .column {
+        flex: 50%;
+        padding: 0 4px;
+        margin-left: 200px;
+        background-color: antiquewhite;
+        margin-right: 600px;
+        margin-bottom: 200px;
+      }
+      
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      h2 {
+          font-size: 15px;
+          font-family:'Times New Roman', Times, serif;
+          color: #fff;
+      }
+
+      h3 {
+          font-size: 15px;
+          font-family: 'Times New Roman', Times, serif;
+      }
+
+      .cnetered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 50rem;
+    font-size: 30px; 
+    color: antiquewhite; 
+    font-family: 'Times New Roman', Times, serif;
+}
+</style>
+</head>
 <body>
-    <style> 
-    
-    </style>
-
-<h2 class="w3-center">Chefs</h2>
-
-<div class="w3-content w3-display-container">
-  <img class="mySlides" src="cooki.jpg" style="width:100%">
-  <img class="mySlides" src="strawberry.jpg" style="width:100%">
-  <img class="mySlides" src="waffle.jpg" style="width:100%">
-  <img class="mySlides" src="artisansmoothie.jpg" style="width:100%">
-
-  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+<ul class= navbar>
+<ul class="topnav">
+  <li><a href="https://en.wikipedia.org/wiki/Dua_Lipa">About Us</a></li>
+  <li><a href="#news">Chefs</a></li>
+  <li><a href="#contact">Menu</a></li>
+  <li><a href="#about">Contact Us</a></li>
+  <li><a href="dining">Private Dining</a></li>
+  <li><a href="reservations">Reservations</a></li>
+  <li><a href="Employment">Employment</a></li>
+  <li><a href="Gallery">Gallery</a></li>
+  <li><a href="contact">Bliss Gifts</a></li>
+</ul>
+</ul>
+<div style="padding:0 16px;">
 </div>
-
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
-
-</body>
+<div class="container"> 
+</div>
+<div class="textcontainer"/>
+        <div class="centered">Meet our Chefs!</div>
+        <h2>We take pride in the way we love, and we hope it inspires you to do the same.</h2>
+    </div>
+<div class="row"> 
+<div class="column"> 
+    <img src="snailchef.jpg" alt="snail"/>
+    <img src="snailsouschef.jpg" alt="souschef"/>
+</div>
+</div>
+<div class="text.container"/> 
+    <div class="cnetered"> Chef Antoni DeVanya</div>
+    <p>
+        Best dish? Lemoncello chicken wrapped in crawlfish, a dish of his own creation, reminiscent of summers in italy with your estranged family.
+</p>
+</div>
+</body> 
+<footer> 
+</footer>
 </html>
